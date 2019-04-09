@@ -2,14 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 18,
-
+        flex: 1,
     },
     viewCard: {
-        paddingStart: 24,
-        paddingEnd: 24,
-        paddingTop: 6,
-        paddingBottom: 24
+        padding: 10,
+        marginLeft: 10,
+        marginRight: 10,
     },
     cardItemCornor: {
         paddingStart: 3,
@@ -25,7 +23,7 @@ const styles = StyleSheet.create({
         fontSize: 10,
         color: '#505051'
     },
-    txtBig: { fontSize: 16, color: '#505051' }
+    txtBig: { fontSize: 12, color: '#505051' }
     ,
     txtLeft: {
         textAlign: 'left'
@@ -39,29 +37,31 @@ const styles = StyleSheet.create({
     headerRow: {
         flexDirection: 'row',
         alignItems: 'center',
-        paddingTop: 20,
-        paddingBottom: 20,
-        paddingEnd: 15,
-        paddingStart: 15
+        paddingTop: 10,
+        paddingBottom: 10,
+        paddingEnd: 10,
+        paddingStart: 10
     },
     footerRow: {
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingBottom: 20,
-        paddingEnd: 15,
-        paddingStart: 15
+        paddingBottom: 10,
+        paddingEnd: 10,
+        paddingStart: 10,
+        paddingTop: 10
     },
     baseVolumeCenter: {
         alignItems: 'center',
+        flex: 1,
     },
     high24: {
-        marginEnd: 20,
         alignItems: 'center',
+        flex: 1,
     },
     low24: {
-        marginStart: 20,
         alignItems: 'center',
+        flex: 1,
     },
     lastPrice: {
         flex: 1,
@@ -71,15 +71,16 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'flex-start',
         flexDirection: 'row',
-        fontSize: 16
+        fontSize: 16,
     },
     coinIcon: {
         width: 40,
         height: 40,
-        marginEnd: 8
+        marginEnd: 8,
     },
     textName: {
-        marginTop: 8
+        fontSize: 15,
+        justifyContent: 'center',
     },
     txtGreen: {
         color: 'green'

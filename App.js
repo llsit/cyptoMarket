@@ -8,6 +8,7 @@ import { AppLoading } from 'expo';
 import { Container, View, StyleProvider } from 'native-base';
 import platform from './native-base-theme/variables/platform';
 import getTheme from './native-base-theme/components';
+import { StatusBar } from 'react-native';
 
 export default class App extends Component {
   constructor(props) {
@@ -33,6 +34,7 @@ export default class App extends Component {
       <StyleProvider style={getTheme(platform)}>
         <Provider store={Store} >
           <View style={{ height: 24 }} />
+          <StatusBar backgroundColor="#e6e6e6" barStyle="light-content" />
           <Container style={{ backgroundColor: '#e6e6e6' }}>
             <Header />
             <DataCoin />

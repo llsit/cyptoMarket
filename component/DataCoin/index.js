@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { AppRegistry, FlatList, Image, View } from 'react-native';
+import { Image, View } from 'react-native';
 import { connect } from "react-redux";
-import { Container, Header, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button, Card, CardItem } from 'native-base';
+import { Content, List, Text, Card } from 'native-base';
 import styles from './style'
 import { images, names } from '../../utils/coinIcon'
 
@@ -30,7 +30,7 @@ class DataCoin extends Component {
                                     </View>
                                     <View style={[styles.lastPrice, styles.txtRight]}>
                                         <Text style={[styles.txtBig]}>
-                                            {item.last} (THB)
+                                            {item.last}
                                         </Text>
                                         <Text style={[styles.txtSmall, item.percentChange > 0 ? styles.txtGreen : styles.txtRed]}>
                                             ({item.percentChange})
@@ -43,7 +43,7 @@ class DataCoin extends Component {
                                             {item.high24hr}
                                         </Text>
                                         <Text style={[styles.txtSmall, styles.txtCenter]}>
-                                            24H HIGH (THB)
+                                            24H HIGH
                                         </Text>
                                     </View>
                                     <View style={styles.baseVolumeCenter}>
@@ -59,7 +59,7 @@ class DataCoin extends Component {
                                             {item.low24hr}
                                         </Text>
                                         <Text style={[styles.txtSmall]}>
-                                            24H LOW (THB)
+                                            24H LOW
                                         </Text>
                                     </View>
                                 </View>
